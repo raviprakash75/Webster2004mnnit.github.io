@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information</title>
+    <style>
+         #update{
+             height: 75px;
+             padding: 5px;
+             border: 2px solid rgb(223, 238, 18);
+             background-color:rgb(255, 145, 0);
+             border-radius: 20px;
+             font-size: XX-large;
+             font-family:Georgia, 'Times New Roman', Times, serif;
+             text-shadow: 3px 3px 3px black;
+         }
+         #Box{
+            padding: 10px;
+            border: 2px groove;
+            border-radius:20px;
+            background-color:aliceblue;
+            
+         }
+         .Text{
+             font-size: 20px;
+             font-family:cursive;
+         }
+         #head{
+             text-shadow: 5px 5px 5px black;
+         }
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fluid   overflow-auto bg-info "  >
+        <center><p class="display-4 text-white " id="head" style="font-family: 'Galada',Cursive;">TheGamer'sZone</p></Center>
+        </div>
+        <br>
+        
+        <div class="container-fluid"><p class="Text ">Hey! Gamer Please update these informations</p></div>
+        
+        <div class="container text-center text-white  overflow-auto" id="update">Update Your Information</div>
+       
+        <div class="container shadow-lg p-5 mb-5 " id="Box">
+             <form class="form" action=" " method="post">
+                <br>
+                <br>
+                <center><img src="Default.png" class="rounded-circle border border-info" width="250" height="250"></center>
+                <br>
+                <input type="file" class="form-control-file" value="Upload Image" name="submit">
+               <br>
+               <br>
+                <label>Bio:</label><input type="textarea" class="form-control " id="Bio-Box " >
+                <br>
+                <br>
+                <div class="form-check">
+                 Games you Like:<br>
+               <table class="table ">
+                <tr>
+                  <td>
+                     <input type="checkbox" name="Games" class="form-check-input" id="PUBG">
+                      <label class="form-check-label" for="PUBG">PUBG</label>
+                   </td>
+                </tr>
+                <tr>
+                    <td>
+                    <input type="checkbox" name="Games" class="form-check-input" id="COC">
+                    <label class="form-check-label" for="COC">Clash of Clan</label>
+                    </td>
+                  </tr>
+                <tr>
+                    <td>
+                    <input type="checkbox" name="Games" class="form-check-input" id="COD">
+                     <label class="form-check-label" for="COD">Call of Duty</label>
+                    </td>
+               </tr>
+               <tr>
+                  <td>
+                    <input type="checkbox" name="Games" class="form-check-input" id="ff">
+                    <label class="form-check-label" for="ff">Free Fire</label>
+                  </td>
+               </tr>
+               <tr>
+                <td>
+                  <input type="checkbox" name="Games" class="form-check-input" id="Other">
+                  <label class="form-check-label" for="Other">Others</label>
+                </td>
+             </tr>
+             </table>
+            </div>
+            <center><input type="submit" class="btn btn-outline-warning " value="Update">  <input type="Button" value="Skip" class="btn btn-primary "></center>
+            <br>
+            <br>
+            </form>
+        </div>
+         <br>
+         <diV class="container-fluid bg-info">
+            <br>
+            <br>
+            <center><a class="text-white" href="#">Contact Us</a>|<a class="text-white" href="#">About Us</a></center>
+            <br>
+            <br>
+             </diV>
+             <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+             <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+          
+</body>
+</html>
