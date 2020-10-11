@@ -33,29 +33,89 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 <body>
+   <!-- header -->
     <div class="container-fluid   overflow-auto bg-info "  >
         <center><p class="display-4 text-white " id="head" style="font-family: 'Galada',Cursive;">TheGamer'sZone</p></Center>
         </div>
         <br>
-        
+        <!-- header close -->
         <div class="container-fluid"><p class="Text ">Hey! Gamer Please update these informations</p></div>
         
         <div class="container text-center text-white  overflow-auto" id="update">Update Your Information</div>
-       
+       <!-- form -->
         <div class="container shadow-lg p-5 mb-5 " id="Box">
              <form class="form" action=" " method="post">
                 <br>
                 <br>
                 <center><img src="Default.png" class="rounded-circle border border-info" width="250" height="250"></center>
                 <br>
-                <input type="file" class="form-control-file" value="Upload Image" name="submit">
+                <p class="text-dark">Upload picture or Choose an Avatar</p>
+                <input type="file" class="form-control-file" value="Upload Image" name="submit"> <button class="btn btn-outline-primary">Choose Avatar</button>
                <br>
                <br>
                 <label>Bio:</label><input type="textarea" class="form-control " id="Bio-Box " >
                 <br>
                 <br>
                 <div class="form-check">
-                 Games you Like:<br>
+                  <b>You Like to do Gaming in:</b><br>
+                  <table class="table">
+                  <tr>
+                    <td>
+                       <input type="checkbox" name="PC" class="form-check-input" id="PC">
+                        <label class="form-check-label" for="PC">PC</label>
+                     </td>
+                  </tr>
+                  <tr>
+                    <td>
+                       <input type="checkbox" name="Mobile" class="form-check-input" id="Mobile">
+                        <label class="form-check-label" for="Mobile">Mobile</label>
+                     </td>
+                  </tr>
+                </table>
+                  <!-- Gaming Genre -->
+                  <b>Gaming Genre You like:</b><br>
+                  <table class="table ">
+                   <tr>
+                     <td>
+                        <input type="checkbox" name="Genre" class="form-check-input" id="Action">
+                         <label class="form-check-label" for="Action">Action</label>
+                      </td>
+                   </tr>
+                   <tr>
+                       <td>
+                       <input type="checkbox" name="Genre" class="form-check-input" id="Arcade">
+                       <label class="form-check-label" for="Arcade">Arcade</label>
+                       </td>
+                     </tr>
+                   <tr>
+                       <td>
+                       <input type="checkbox" name="Genre" class="form-check-input" id="Racing">
+                        <label class="form-check-label" for="Racing">Racing</label>
+                       </td>
+                  </tr>
+                  <tr>
+                     <td>
+                       <input type="checkbox" name="Genre" class="form-check-input" id="Sports">
+                       <label class="form-check-label" for="Sports">Sports</label>
+                     </td>
+                  </tr>
+                  <tr>
+                    <td>
+                       <input type="checkbox" name="Genre" class="form-check-input" id="Strategy">
+                        <label class="form-check-label" for="Strategy">Strategy</label>
+                     </td>
+                  </tr>
+                  <tr>
+                    <td>
+                       <input type="checkbox" name="Genre" class="form-check-input" id="Others">
+                        <label class="form-check-label" for="Others">Others</label>
+                     </td>
+                  </tr>
+                  </table>
+                 <br>
+                 <br>
+                  <!-- Games -->
+                 <b>Games you Like:</b><br>
                <table class="table ">
                 <tr>
                   <td>
@@ -78,13 +138,13 @@
                <tr>
                   <td>
                     <input type="checkbox" name="Games" class="form-check-input" id="ff">
-                    <label class="form-check-label" for="ff">Free Fire</label>
+                    <label class="form-check-label" for="ff">FIFA</label>
                   </td>
                </tr>
                <tr>
                 <td>
                   <input type="checkbox" name="Games" class="form-check-input" id="Other">
-                  <label class="form-check-label" for="Other">Others</label>
+                  <label class="form-check-label" for="Other">Counter-Strike</label>
                 </td>
              </tr>
              </table>
@@ -93,9 +153,11 @@
             <br>
             <br>
             </form>
+              <!-- form closed -->
         </div>
          <br>
-         <diV class="container-fluid bg-info">
+           <!-- footer -->
+           <diV class="container-fluid bg-info">
             <br>
             <br>
             <center><a class="text-white" href="#">Contact Us</a>|<a class="text-white" href="#">About Us</a></center>
