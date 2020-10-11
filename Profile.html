@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User_profile</title>
+  <style>
+    #Box {
+      background-color: #DCDCDC;
+
+    }
+
+    #Inner-box {
+      background-color: snow;
+    }
+
+    #Info-box {
+      background-color: rgb(199, 218, 209);
+      ;
+      border: 2px groove;
+    }
+
+    #Gaming-name {
+      text-align: center;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+      text-shadow: 5px 5px 5px grey;
+    }
+
+    .Gamer-Info {
+      border: 2px 1px solid #0062cc;
+      background-color: #00244a;
+      font-size: 25px;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    .heading {
+      padding: 1px;
+      background-color: #007bff;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 25px;
+    }
+
+    .posts-box {
+      height: 500px;
+      background-color: #DCDCDC;
+      border: 5px groove;
+    }
+    
+    img:hover {
+      opacity: 0.7;
+    }
+   
+  </style>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <div class="container-fluid " id="Box">
+    <!-- NavBar -->
+    <div class="container-fluid  " id="Nav-Box">
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-info">
+        <a class="navbar-brand ml-5" href="#">
+          <img src="Game1.jpg" width="50" height="50" class="rounded-circle align-top" alt="" loading="lazy"></a>
+        <a class="navbar-brand ml-2" style="font-family:georgia;" href="#">Gamer'sZone</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item "><a href="HomeUser.html" class="nav-link"
+                style="font-family: 'Galada',Cursive;">Home</a></li>
+            <li><a href="#" class="nav-link active" style="font-family: 'Galada',Cursive;">Profile</a><span
+                class="sr-only">(current)</span></li>
+            <li><a href="#" class="nav-link" style="font-family: 'Galada',Cursive;">Notification</a></li>
+            <li><a href="#" class="nav-link" style="font-family: 'Galada',Cursive;">Chat</a></li>
+            <li><a href="#" class="nav-link" style="font-family: 'Galada',Cursive;">Settings</a></li>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
+              <button class="btn btn-outline-danger  my-2 my-sm-0  ml-5" type="submit">Logout</button>
+            </form>
+
+          </ul>
+          </button>
+      </nav>
+    </div>
+    <!-- Navbar closed -->
+    <div class="container shadow-lg " id="Inner-box">
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="container shadow " id="Cover">
+
+        <!-- profile pic -->
+        <center><a href="Gamer1.jpg"><img src="Gamer1.jpg" class="rounded-circle shadow-lg" width="300" height="300"></a></center>
+        <br>
+      </div>
+
+      <p class="display-4 text-black " id="Gaming-name">AbhiZ</p>
+      <!-- gamer info -->
+      <div class="container-fluid Gamer-Info ">
+        <p class="text-white" style="text-align:center">Gamer Info</p>
+      </div>
+      <div class="container rounded shadow-lg  " id="Info-box">
+        <strong><label>Name: </label> <label> Abhi</label><br>
+          <label>City: </label> <label>Delhi </label><br>
+          <label>Age: </label> <label> 19</label><br>
+          <label>Bio: </label> <label></label><br>
+          <label>Gaming Genre: </label> <label> Arcade,Action,Racing,Stratragey</label><br>
+          <label>Games: </label> <label>Clash of Clans , Call of Duty</label>
+          <label></label><label></label><br>
+        </strong>
+      </div>
+      <!-- gamer info -->
+      <br>
+      <button class="btn btn-warning">Change Details</button> <button class="btn btn-primary">Update Avatar</button> 
+      <br>
+      <br>
+      <diV class="container-fluid shadow-lg rounded bg-dark "><center><p class="text-light" style="font-size:25px">Friends</p></center></diV>
+      <div class="container shadow-lg rounded" style="height: 200px; border: 2px groove;">
+       
+      </div>
+      <br>
+      <!-- gamer's post -->
+      <div class=" container-fluid shadow-lg rounded heading">
+        <p class="text-light">Posts</p>
+      </div>
+      <div class="container ml-0 overflow-auto posts-box">
+      <table>
+      <tr>
+      <td><div><a href="background2.jpg"><img src="background2.jpg" alt="post1" class="img-fluid" width="280" height="280"></a></div></td>
+      <td> <div><a href="Gamer1.jpg"><img src="Gamer1.jpg" alt="post1" class="img-fluid" width="280"height="280"></a></div> </td>
+      <td> <div><a href="Gamer1.jpg"><img src="Gamer1.jpg" alt="post1" class="img-fluid" width="280"height="280"></a></div> </td>
+      <td><div><a href="background2.jpg"><img src="background2.jpg" alt="post1" class="img-fluid" width="280"height="280"></a></div></td>
+      </tr>
+      <tr>
+        <td><div><a href="background2.jpg"><img src="background2.jpg" alt="post1" class="img-fluid" width="280"height="280"></a></div></td>
+        <td> <div><a href="background2.jpg"><img src="Gamer1.jpg" alt="post1" class="img-fluid" width="280" height="280"></a></div> </td>
+        <td> <div><a href="Gamer1.jpg"><img src="Gamer1.jpg" alt="post1" class="img-fluid" width="280" height="280"></a></div> </td>
+        <td><div><a href="background2.jpg"><img src="background2.jpg" alt="post1" class="img-fluid" width="280" height="280"></a></div></td>
+        </tr>
+        </table>
+
+      </div>
+      <br>
+      <button class="btn btn-danger ">Share Your Gaming Experiences</button>
+      <br>
+      <br>
+    </diV>
+  </div>
+  <!-- footer -->
+  <diV class="container-fluid bg-info">
+    <br>
+    <br>
+    <center><a class="text-white" href="#">Contact Us</a>|<a class="text-white" href="#">About Us</a></center>
+    <br>
+    <br>
+  </diV>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
