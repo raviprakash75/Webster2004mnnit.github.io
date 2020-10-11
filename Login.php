@@ -12,13 +12,13 @@ if($_SESSION['user']->isloggedin)
         #Form-box{
             border:0.05px groove;
             border-radius: 10px;
-            width: 500px;
+            width: 400px;
             background-color:aliceblue;
         }
         #Box{
             border:groove;
             border-radius: 10px;
-            width: 500px;
+            width: 400px;
             
         }
         #Input-Box{
@@ -32,6 +32,7 @@ if($_SESSION['user']->isloggedin)
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 <body>
+	//Header
     <div class="container-fluid overflow-auto  bg-info"  >
         <center><p class="display-4 text-white " id="head" style="font-family: 'Galada',Cursive;">TheGamer'sZone</p></Center>
         </div>
@@ -39,7 +40,7 @@ if($_SESSION['user']->isloggedin)
         <div class="container bg-dark  overflow-auto " id="Box" >
             <center><p class="display-4 text-white" style="font-family:georgia;" >Login</p></center>
             </div>
-            
+         //Form   
         <div class="container shadow-lg p-3 mb-5 "  id="Form-box">
         <form class="form" method="post" id="Input-Box">  
         <label><b>Username:</b></label><input type="text" name="username" class="form-control" placeholder="Username"><br>
@@ -54,7 +55,7 @@ if($_SESSION['user']->isloggedin)
          </div>
          <br>
          <br>
-         
+         //footer
          <div class="container-fluid bg-info">
             <br>
             <br>
