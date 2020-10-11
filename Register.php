@@ -1,5 +1,12 @@
 <?php
  SESSION_START();
+
+if($_SESSION['user']->isloggedin)
+	die("home.php");
+	
+	else if($_SESSION['user']->isregistered)
+	die("login.php");
+	
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -77,12 +84,13 @@ if(isset($_POST['username']))
 {
 
 require_once('private/user.php');
-$_SESSION['user']=new User($_POST['name'],$_POST['username'],$_POST['email'],$_POST['password'],$_POST['age'],$_POST['phone'],$_POST['city']);
+$_SESSION['user']=new User();
+$_SESSION['user']->init($_POST['name'],$_POST['username'],$_POST['email'],$_POST['password'],$_POST['age'],$_POST['phone'],$_POST['city']);
 
 if(!$_SESSION['user']->isregistered()&&$_SESSION['user']->register())
 {
 $_SESSION['user']->setregistered(true);
-echo "<script>alert('registered successfully');</script>";
+echo "<script>window.location.replace('Login.php')</script>";
 
 }
 else if ($_SESSION['user']){
